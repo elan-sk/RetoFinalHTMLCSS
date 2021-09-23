@@ -1,5 +1,18 @@
-//variables Generales
+//importar fuentes
+  @font-face {
+    font-family: 'fuente-menu';
+    src: local('../fonts/nittigrotesk-normal.woff2'), local('../fonts/nittigrotesk-normal.woff2'),
+        url('../fonts/nittigrotesk-normal.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+  }
+    
 
+//variables Generales
+    //colores
+    $color-fondo: #000;
+    $color-texto1:white;
+  
 
 //Importaciones 
 @import "header";
@@ -8,3 +21,14 @@
 @import "seccion2";
 @import "seccion3";
 @import "footer";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: $color-fondo;
+}
