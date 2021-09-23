@@ -1,8 +1,8 @@
 //importar fuentes
   @font-face {
-    font-family: 'fuente-menu';
-    src: local('../fonts/nittigrotesk-normal.woff2'), local('../fonts/nittigrotesk-normal.woff2'),
-        url('../fonts/nittigrotesk-normal.woff2') format('woff2');
+    font-family: 'heroic-normal';
+    src: local('../fonts/heroic-cond-vrg-web-ltd-md.woff2'), local('../fonts/heroic-cond-vrg-web-ltd-md.woff2'),
+        url('../fonts/heroic-cond-vrg-web-ltd-md.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
   }
@@ -12,6 +12,10 @@
     //colores
     $color-fondo: #000;
     $color-texto1:white;
+    $color-enfasis1:#E2127A;
+    $color-enfasis2:#B30E61;
+
+  
   
 
 //Importaciones 

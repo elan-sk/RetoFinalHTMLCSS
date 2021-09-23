@@ -1,34 +1,49 @@
+//variables
+$menu-fuente:'heroic-normal';
+$submenu-border:1px solid #333333;
+$submenu-color-hover:#1A1A1A;
+
 .banner {
     /* background:chocolate; */
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    align-items: center;
+    align-items:center;
     width: 100%;
-    height: 3.5em;
     padding: 0 1em;
     
     .banner-logo {  
-        width: 12em;
+        width: 7.4em;
+        margin: .1em 0;
     }
 
     .banner-buttonLogin {
         background: none;
         border: none;
-        width: 1.6em;
+        width: 1em;
+        margin: .64em;
     }
 }
 .menu-lista {
-    background:chocolate;
+    /* background:chocolate; */
     color: $color-texto1;
-    display: flex;
-    flex-wrap: nowrap;
+    display: grid;
     justify-content: space-evenly;
     align-items: center;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(3,1fr);
 
     .menu-lista-submenu {
         list-style: none;
-        width: auto;
-        font-family: fuente-menu;
+        font-family: $menu-fuente;
+        padding: .25em .1em;
+        border-right: $submenu-border;
+        border-bottom: $submenu-border;
+        text-align:center;
     }
 }
+.menu-lista-submenu:hover {
+            background: $submenu-color-hover;
+        }
+
+
