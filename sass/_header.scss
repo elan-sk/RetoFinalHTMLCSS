@@ -2,6 +2,7 @@
 $menu-fuente:'heroic-normal';
 $submenu-border:1px solid #333333;
 $submenu-color-hover:#1A1A1A;
+$lista-color-texto:$COLOR-TEXTO1;
 
 .banner {
     /* background:chocolate; */
@@ -26,7 +27,7 @@ $submenu-color-hover:#1A1A1A;
 }
 .menu-lista {
     /* background:chocolate; */
-    color: $color-texto1;
+    color: $lista-color-texto;
     display: grid;
     justify-content: space-evenly;
     align-items: center;

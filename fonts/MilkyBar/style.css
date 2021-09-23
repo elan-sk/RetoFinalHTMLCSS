@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'Milky Bar';
-    src: local('Milky Bar Normal'), local('Milky-Bar-Normal'),
-        url('MilkyBar-Normal.woff2') format('woff2'),
-        url('MilkyBar-Normal.woff') format('woff'),
-        url('MilkyBar-Normal.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-  }
