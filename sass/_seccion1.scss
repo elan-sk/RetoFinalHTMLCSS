@@ -1,0 +1,58 @@
+//variables
+$article-color-texto: $COLOR-TEXTO1;
+$article-color-fondo: $COLOR-FONDO;
+$article-color-link: $COLOR-ENFASIS1;
+$article-color-link-hover: $COLOR-ENFASIS2;
+$seccion1-color-fondo:linear-gradient(90deg,#f7c626 15%,#f68c2f 40%,#e5127d 85%);
+
+
+.seccion1 {
+    background: $seccion1-color-fondo;
+    color:$article-color-texto;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+    padding: 2px;
+    margin: .8em;
+    h3{
+        display: none;
+    }
+}
+
+.seccion1-articulo {
+    background: #000;
+    width: 100%;
+    display: flex;
+    gap:.5em;
+    padding: .4em;
+}
+
+.seccion1-articulo-imagen {
+    max-width: 30%;
+    height:min-content;
+}
+
+.seccion1 :first-child .seccion1-articulo-imagen {
+    max-width: 50%;
+}
+
+p { 
+    margin-top: -.2em;
+    margin-bottom: .2em;
+}
+
+p a{
+    color: $article-color-texto;
+    text-decoration: none;
+    }
+
+a {
+    color: $article-color-link;
+    text-decoration: none;
+
+}
+
+a:hover {
+    color:$article-color-link-hover;
+}
