@@ -1,2 +1,2 @@
 # RetoFinalHTMLCSS
-Compañero no e podido continuar porque no e podido integrar el sass
+falta integrar el saas al visual code para continuar
