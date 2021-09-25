@@ -1,22 +1,12 @@
-//importar fuentes
-  @font-face {
-    font-family: 'heroic-normal';
-    src: local('../fonts/heroic-cond-vrg-web-ltd-md.woff2'), local('../fonts/heroic-cond-vrg-web-ltd-md.woff2'),
-        url('../fonts/heroic-cond-vrg-web-ltd-md.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-  }
-    
-
 //variables Generales
-    //colores
-    $COLOR-FONDO: #000;
-    $COLOR-TEXTO1:white;
-    $COLOR-ENFASIS1:#E2127A;
-    $COLOR-ENFASIS2:#B30E61;
+//colores
+$COLOR-FONDO: #000;
+$COLOR-TEXTO1:white;
+$COLOR-ENFASIS1:#E2127A;
+$COLOR-ENFASIS2:#B30E61;
 
-  
-  
+//importar fuentes
+ @import "../fonts/fuentes";
 
 //Importaciones 
 @import "header";
@@ -36,3 +26,12 @@
 body {
     background: $COLOR-FONDO;
 }
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+button {
+  background: none;
+  border: none;}
