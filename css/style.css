@@ -325,7 +325,7 @@ a:hover {
     line-height: 1em;
     text-transform: uppercase;
   }
-  .seccion1-articulo-cuarto {
+  .seccion1-cuarto {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
@@ -363,7 +363,7 @@ a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 2em 0;
+    margin: 2.5em 0;
     color: black;
   }
   .seccion1-cuadricula-ultima img {
