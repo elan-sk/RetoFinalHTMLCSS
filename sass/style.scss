@@ -5,6 +5,8 @@ $COLOR-TEXTO1:white;
 $COLOR-ENFASIS1:#E2127A;
 $COLOR-ENFASIS2:#B30E61;
 
+
+
 //importar fuentes
  @import "../fonts/fuentes";
 
@@ -15,8 +17,6 @@ $COLOR-ENFASIS2:#B30E61;
 @import "seccion2";
 @import "seccion3";
 @import "footer";
-
-
 *{
     margin: 0;
     padding: 0;
@@ -28,10 +28,13 @@ body {
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
 button {
   background: none;
   border: none;}
+
+
+       
