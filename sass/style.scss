@@ -1,7 +1,9 @@
 //variables Generales
 //colores
 $COLOR-FONDO: #000;
+$COLOR-FONDO2: #FEFEFE;
 $COLOR-TEXTO1:white;
+$COLOR-TEXTO2:#424242;
 $COLOR-ENFASIS1:#E2127A;
 $COLOR-ENFASIS2:#B30E61;
 
@@ -36,5 +38,7 @@ button {
   background: none;
   border: none;}
 
-
-       
+h1,h2,h3,h4 {
+  display: none;
+}
+     
