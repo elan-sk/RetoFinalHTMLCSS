@@ -238,7 +238,8 @@
   -ms-grid-columns: minmax(500px, 800px) 350px;
       grid-template-columns: minmax(500px, 800px) 350px;
   justify-content: center;
-      grid-template-areas: "seccion2 aside"  "seccion3 aside";
+      grid-template-areas: "seccion2 aside" 
+ "seccion3 aside";
 }
 
 .seccion2 {
@@ -592,7 +593,8 @@ a:hover {
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
-        grid-template-areas: "p      titulo" "span   titulo";
+        grid-template-areas: "p      titulo"
+ "span   titulo";
   }
   .seccion1-cuadricula-ultima .seccion1-articulo-descripcion p {
     -ms-grid-row: 1;
