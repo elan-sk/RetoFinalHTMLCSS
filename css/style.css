@@ -223,6 +223,207 @@
   }
 }
 
+.Masnoticias {
+  background: #FEFEFE;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: grid;
+  gap: 1em;
+  grid-auto-rows: auto;
+  -ms-grid-columns: minmax(500px, 800px) 350px;
+      grid-template-columns: minmax(500px, 800px) 350px;
+  justify-content: center;
+      grid-template-areas: "seccion2 aside" 
+ "seccion3 aside";
+}
+
+.seccion2 {
+  background: #FEFEFE;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: seccion2;
+}
+
+.seccion3 {
+  background: #FEFEFE;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: seccion3;
+}
+
+.aside {
+  background: #FEFEFE;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: aside;
+  font-family: nittigrotesk-normal;
+  margin-top: 2em;
+}
+
+.aside-Cvideos {
+  position: relative;
+  color: #424242;
+}
+
+.aside-Cvideos a {
+  color: inherit;
+}
+
+.aside-Cvideos-titulo, .aside-Cvideos-masvideos {
+  color: #E2127A;
+  display: block;
+  text-align: center;
+  font-family: heroic-3;
+  font-size: 2em;
+  font-weight: 400;
+  margin: .3em 0;
+  position: relative;
+}
+
+.aside-Cvideos-video {
+  margin: 1em;
+}
+
+.aside-Cvideos-titulo::before {
+  position: absolute;
+  background-color: #393092;
+  content: "";
+  height: 2px;
+  bottom: 0;
+  left: 15px;
+  right: 0;
+  z-index: 1;
+}
+
+.aside-Cvideos-titulo::after {
+  background-color: #393092;
+  bottom: 12px;
+  content: "";
+  height: 2px;
+  left: -2px;
+  position: absolute;
+  -webkit-transform-origin: bottom;
+  transform-origin: bottom;
+  -webkit-transform: rotate(-120deg);
+  transform: rotate(-120deg);
+  width: 25px;
+  z-index: 1;
+}
+
+.aside-Cvideos::after {
+  position: absolute;
+  background-color: #393092;
+  width: 2px;
+  content: "";
+  bottom: 130px;
+  right: -1px;
+  top: 2.3em;
+  z-index: 1;
+}
+
+.aside-Cvideos-masvideos {
+  text-align: right;
+  font-size: 1.1em;
+  font-weight: 400;
+  margin: 2.5em 0;
+}
+
+.aside-Cvideos-masvideos-a {
+  position: relative;
+}
+
+.aside-Cvideos-masvideos-a::before {
+  background-color: #393092;
+  content: "";
+  height: 2px;
+  position: absolute;
+  z-index: 1;
+  bottom: -10px;
+  left: 0;
+  right: -4px;
+  margin: 0;
+  padding: 0;
+}
+
+.aside-Cvideos-masvideos-a::after {
+  left: auto;
+  bottom: 5px;
+  right: -30px;
+  width: 35px;
+  height: 2px;
+  background-color: #393092;
+  -webkit-transform: rotate(120deg);
+          transform: rotate(120deg);
+  content: "";
+  position: absolute;
+  z-index: 1;
+}
+
+.aside-inscripcion {
+  position: relative;
+}
+
+.aside-inscripcion {
+  border: 2px solid #393092;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1em;
+}
+
+.aside-inscipcion-logo {
+  width: 3em;
+  background: #FEFEFE;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.aside-inscipcion-logo svg {
+  fill: #393092;
+  width: 100%;
+  padding: 1em;
+}
+
+.aside-inscipcion-imagen {
+  width: 46%;
+  margin: 0 27%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: .8em;
+}
+
+.aside-inscipcion-Msubscribe {
+  text-align: center;
+}
+
+.aside-inscripcion-input {
+  width: 100%;
+  height: 2.5em;
+  margin-top: 5px;
+}
+
+.aside-inscripcion-botonSuscipcion {
+  text-align: center;
+  width: 100%;
+  color: white;
+  background: #393092;
+  padding: .5em;
+}
+
 .seccion1 {
   background: -webkit-gradient(linear, left top, right top, color-stop(15%, #f7c626), color-stop(40%, #f68c2f), color-stop(85%, #e5127d));
   background: linear-gradient(90deg, #f7c626 15%, #f68c2f 40%, #e5127d 85%);
@@ -294,7 +495,7 @@ a:hover {
     font-size: 1.2em;
     line-height: 1.2em;
   }
-  .seccion1-articulo spam {
+  .seccion1-articulo span {
     font-family: heroic-3;
     font-size: .8em;
     text-transform: uppercase;
@@ -363,7 +564,8 @@ a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 2.5em 0;
+    margin: 3em 0;
+    padding: 0 1.2em;
     color: black;
   }
   .seccion1-cuadricula-ultima img {
@@ -371,35 +573,47 @@ a:hover {
   }
   .seccion1-cuadricula-ultima .seccion1-articulo-titulo-ultimo {
     display: inherit;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    grid-area: titulo;
     width: 50%;
     padding-left: .5em;
     font-family: heroic-1;
     font-size: 2.5em;
+    text-align: left;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
   .seccion1-cuadricula-ultima .seccion1-articulo-descripcion {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     text-align: right;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "p      titulo"
+ "span   titulo";
   }
   .seccion1-cuadricula-ultima .seccion1-articulo-descripcion p {
-    width: 50%;
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: p;
+    text-align: right;
     color: black;
   }
   .seccion1-cuadricula-ultima .seccion1-articulo-descripcion p a {
     color: black;
   }
-  .seccion1-cuadricula-ultima .seccion1-articulo-descripcion spam {
-    width: 50%;
+  .seccion1-cuadricula-ultima .seccion1-articulo-descripcion span {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: span;
     color: black;
     font-size: 1em;
   }
-  .seccion1-cuadricula-ultima .seccion1-articulo-descripcion spam a {
+  .seccion1-cuadricula-ultima .seccion1-articulo-descripcion span a {
     color: black;
   }
   .seccion1-primero::before {
@@ -471,5 +685,9 @@ body {
 button {
   background: none;
   border: none;
+}
+
+h1, h2, h3, h4 {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

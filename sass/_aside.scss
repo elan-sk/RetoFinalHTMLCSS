@@ -1,0 +1,203 @@
+//VARIABLES
+$aside-color-fondo: $COLOR-FONDO2;
+$Cvideos-color-titulo: $COLOR-ENFASIS1;
+$Cvideos-color-texto: $COLOR-TEXTO2;
+$Cvideos-color-border: #393092;
+$aside-ancho: 1 1 200px;
+
+.Masnoticias {
+    background:$COLOR-FONDO2;
+    display: grid;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    display:grid;
+    gap:1em;
+    grid-auto-rows: auto;
+    grid-template-columns: minmax(500px, 800px) 350px ;
+    justify-content: center;
+
+    grid-template-areas:    "seccion2 aside" 
+                            "seccion3 aside";
+
+}
+
+
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+/////////////////////MOVER A LOS MODULOS CORRESPONDIENTES
+.seccion2 {
+    background: $COLOR-FONDO2;
+    grid-area: seccion2;
+} 
+
+.seccion3 {
+    background: $COLOR-FONDO2;
+    grid-area: seccion3;
+} 
+////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+
+
+.aside {
+    background: $aside-color-fondo;
+    grid-area: aside;
+    font-family: nittigrotesk-normal;
+
+    margin-top: 2em;
+}
+.aside-Cvideos {
+    position:relative;
+    color:$Cvideos-color-texto;
+    a {
+        color:inherit;
+    }
+}
+
+.aside-Cvideos-titulo, .aside-Cvideos-masvideos {
+        color:$Cvideos-color-titulo;
+        display: block;
+        text-align: center;
+        font-family: heroic-3;
+        font-size: 2em;
+        font-weight: 400;
+        margin: .3em 0;
+        position: relative;
+}
+
+.aside-Cvideos-video {
+    margin: 1em;
+}
+///DECORACION CAJA VIDEOS
+.aside-Cvideos-titulo::before {
+    position: absolute;
+    background-color: #393092;
+    content: "";
+    height: 2px;
+    bottom: 0;
+    left: 15px;
+    right: 0;
+    z-index: 1;
+}
+
+.aside-Cvideos-titulo::after {
+    background-color: #393092;
+    bottom: 12px;
+    content: "";
+    height: 2px;
+    left: -2px;
+    position: absolute;
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+    -webkit-transform: rotate(-120deg);
+    transform: rotate(-120deg);
+    width: 25px;
+    z-index: 1;
+}
+
+.aside-Cvideos::after {
+    position: absolute;
+    background-color: #393092;
+    width: 2px;
+    content: "";
+    bottom: 130px;
+    right: -1px;
+    top: 2.3em;
+    z-index: 1;
+}
+
+.aside-Cvideos-masvideos {
+    text-align: right;
+    font-size: 1.1em;
+    font-weight: 400;
+    margin: 2.5em 0;
+}
+.aside-Cvideos-masvideos-a {
+    position:relative;
+}
+
+//DECORACION MAS VIDEOS
+.aside-Cvideos-masvideos-a::before {
+    background-color: #393092;
+    content: "";
+    height: 2px;
+    position: absolute;
+    z-index: 1;
+    bottom: -10px;
+    left: 0;
+    right: -4px;
+    margin: 0;
+    padding: 0;
+}
+
+.aside-Cvideos-masvideos-a::after {
+    left: auto;
+    bottom: 5px;
+    right: -30px;
+    width: 35px;
+    height: 2px;
+    background-color: #393092;
+    transform: rotate(120deg);
+    content: "";
+    position: absolute;
+    z-index: 1;
+}
+//inscripcion
+.aside-inscripcion {
+    position: relative;
+    
+}
+
+.aside-inscripcion {
+    border:2px solid $Cvideos-color-border;
+    padding: 1em;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 1em;
+}
+
+.aside-inscipcion-logo {
+    width: 3em;
+    background:$aside-color-fondo;
+
+    svg {
+        fill:$Cvideos-color-border;
+        width: 100%;
+        padding: 1em;
+    }
+
+	object-fit: cover;
+	position:absolute;
+	top:0;
+	left:50%;
+	transform: translate(-50%,-50%);
+}
+
+
+.aside-inscipcion-imagen {
+    width: 46%;
+    margin: 0 27%;
+    object-fit: cover;
+    margin-top: .8em;
+}
+
+.aside-inscipcion-Msubscribe{
+    text-align: center;
+}
+
+.aside-inscripcion-input {
+    width: 100%;
+    height: 2.5em;
+    margin-top: 5px;
+}
+
+.aside-inscripcion-botonSuscipcion {
+    text-align: center;
+    width: 100%;
+    color: white;
+    background: $Cvideos-color-border;
+    padding: .5em;
+}
