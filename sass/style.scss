@@ -34,6 +34,23 @@ body {
   margin: 0 auto;
 }
 
+
+.Masnoticias {
+  background:$COLOR-FONDO2;
+  justify-content: center;
+  padding-top: 2em;
+
+  display:grid;
+  gap:1em;
+  grid-auto-rows: auto;
+  grid-template-columns: minmax(500px, 800px) 350px ;
+  justify-content: center;
+
+  grid-template-areas:    "seccion2 aside" 
+                          "seccion3 aside";
+
+}
+
 button {
   background: none;
   border: none;}
@@ -42,3 +59,14 @@ h1,h2,h3,h4 {
   display: none;
 }
      
+a {
+  color:inherit;
+  background:inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+}
+a:hover {
+  color:$article-color-link-hover;
+}

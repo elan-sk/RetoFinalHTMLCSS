@@ -53,6 +53,10 @@ $redes-color-fill:$COLOR-ENFASIS1;
     background: $submenu-color-hover;
 }
 
+.menu-redes {
+    display: none;
+}
+
 /* //OCULTAR ELEMENTOS DE LA LISTA DE MENU
 .menu-lista :nth-child(2),:nth-child(4),:nth-child(5),:nth-child(6),:nth-child(7),:nth-child(8) {
     display: none;

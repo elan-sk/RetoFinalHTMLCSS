@@ -1,0 +1,40 @@
+.seccion2 {
+    background: $COLOR-FONDO2;
+    grid-area: seccion2;
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+} 
+
+.seccion2-articulo {
+    display: flex;
+
+
+}
+
+.seccion2-cuadriculaPequena {
+    gap: .5em;
+    margin-top: .8em;
+    border-top: 1px solid rgb(219, 219, 219);
+
+    .seccion2-articulo-imagen {
+        flex: 0 1 220px;
+    }
+
+    .seccion2-articulo-parrafo {
+        font-weight: 600;
+    }
+
+    .seccion2-articulo-descripcion {
+        flex: 1 1 200px;
+        padding-top: .5em;
+
+    }
+
+    .seccion2-articulo-By {
+        display: block;
+        font-size: .8em;
+        margin-top: .6em;
+    }
+
+}

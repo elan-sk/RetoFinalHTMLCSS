@@ -5,31 +5,19 @@ $Cvideos-color-texto: $COLOR-TEXTO2;
 $Cvideos-color-border: #393092;
 $aside-ancho: 1 1 200px;
 
-.Masnoticias {
-    background:$COLOR-FONDO2;
-    display: grid;
-    justify-content: center;
-    flex-wrap: wrap;
 
-    display:grid;
-    gap:1em;
-    grid-auto-rows: auto;
-    grid-template-columns: minmax(500px, 800px) 350px ;
-    justify-content: center;
 
-    grid-template-areas:    "seccion2 aside" 
-                            "seccion3 aside";
-
+.aside {
+    display: none;
 }
 
+
+@media screen and (min-width: 720px) {
 
 ///////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////
 /////////////////////MOVER A LOS MODULOS CORRESPONDIENTES
-.seccion2 {
-    background: $COLOR-FONDO2;
-    grid-area: seccion2;
-} 
+
 
 .seccion3 {
     background: $COLOR-FONDO2;
@@ -39,6 +27,9 @@ $aside-ancho: 1 1 200px;
 ///////////////////////////////////////////////////////
 /////////////////////////////////////////////////////
 
+.aside {
+    display: initial;
+}
 
 .aside {
     background: $aside-color-fondo;
@@ -199,5 +190,5 @@ $aside-ancho: 1 1 200px;
     width: 100%;
     color: white;
     background: $Cvideos-color-border;
-    padding: .5em;
-}
+    padding: .8em;
+}}
