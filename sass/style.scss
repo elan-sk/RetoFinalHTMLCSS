@@ -17,8 +17,8 @@ $COLOR-ENFASIS2:#B30E61;
 @import "aside";
 @import "seccion1";
 @import "seccion2";
-@import "seccion3";
 @import "footer";
+
 *{
     margin: 0;
     padding: 0;
@@ -27,6 +27,7 @@ $COLOR-ENFASIS2:#B30E61;
 
 body {
     background: $COLOR-FONDO;
+    font-family: nittigrotesk-normal;
 }
 
 .container {
@@ -38,7 +39,7 @@ body {
 .Masnoticias {
   background:$COLOR-FONDO2;
   justify-content: center;
-  padding-top: 2em;
+  padding: 2em .8em;
 
   display:grid;
   gap:1em;
@@ -46,8 +47,7 @@ body {
   grid-template-columns: minmax(500px, 800px) 350px ;
   justify-content: center;
 
-  grid-template-areas:    "seccion2 aside" 
-                          "seccion3 aside";
+  grid-template-areas:    "seccion2 aside";
 
 }
 

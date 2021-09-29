@@ -1,0 +1,38 @@
+/*ESTILOS PARA EL FOOTER*/
+
+.footer {
+ background: black;
+ color: white;
+ display: flex;
+ flex-direction: row;
+ gap:2em;
+ justify-content: space-evenly;
+ align-items: center;
+ height: 250px;
+}
+
+.footer-logo{
+ width: 15em;
+ margin: 0 1em;
+}
+
+.footer-LadoIzquierdo {
+  display: flex;
+}
+
+.footer-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap:.5em;
+  color: $COLOR-ENFASIS1;
+
+  li{
+   margin: 0 .9em;
+  }
+}
+
+
+.footer-LadoDerecho {
+   width: 500px;
+   text-align: right;
+}

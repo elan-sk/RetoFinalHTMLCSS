@@ -4,14 +4,17 @@
     width: 100%;
     display:flex;
     flex-wrap: wrap;
+
+    /* border: 5px solid green; */
 } 
 
 .seccion2-articulo {
     display: flex;
-
-
+    width: 100%;
 }
 
+
+////CUADRICULA PEQUEÑA
 .seccion2-cuadriculaPequena {
     gap: .5em;
     margin-top: .8em;
@@ -20,15 +23,15 @@
     .seccion2-articulo-imagen {
         flex: 0 1 220px;
     }
-
-    .seccion2-articulo-parrafo {
-        font-weight: 600;
-    }
-
+    
     .seccion2-articulo-descripcion {
         flex: 1 1 200px;
         padding-top: .5em;
 
+    }
+
+    .seccion2-articulo-parrafo {
+        font-weight: 600;
     }
 
     .seccion2-articulo-By {
@@ -38,3 +41,88 @@
     }
 
 }
+
+////CUADRICULA GRANDE
+.seccion2-cuadriculaGrande {
+    margin-top: .8em;
+    flex-wrap: wrap-reverse;
+
+    .seccion2-articulo-imagen {
+        width: 100%;
+    }
+
+    .seccion2-articulo-descripcion {
+        padding: 1em .5em;
+        background: $COLOR-FONDO;
+        color: white;
+        width: 100%;
+    }
+    
+    .seccion2-articulo-parrafo {
+        font-weight: 600;
+    }
+
+
+    .seccion2-articulo-By {
+        display: block;
+        font-size: .8em;
+        margin-top: .6em;
+    }
+}
+
+    //CUADRICULA ELEGANTE
+    .seccion2-cuadriculaElegante {
+        background:transparent;
+        justify-content: center;
+        align-items: center;
+        margin: 1em 0;
+        padding: 0 .5em;
+        color:black; 
+        margin-top: .8em;
+        border-top: 1px solid rgb(219, 219, 219);
+
+        .seccion2-articulo-imagen {
+            display: none;
+        }
+        .seccion2-articulo-titulo{
+            display: inherit;
+            grid-area: titulo;
+            width: 50%;
+            padding-left: .5em;
+            font-family: heroic-1;
+            font-size: 2.5em;
+            text-align: left;
+            align-self: center;
+            color:$COLOR-ENFASIS1;
+        }
+
+        .seccion2-articulo-descripcion {
+            text-align: right;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            grid-template-areas:    
+            "p      titulo"
+            "span   titulo";
+            
+          
+            .seccion2-articulo-parrafo {
+                grid-area: p;
+                text-align: right;
+                color:black;
+                font-family: nittigrotesk-normal;
+            }
+
+            .seccion2-articulo-By {
+                grid-area: span;
+                color:black;
+                font-size: 1em;
+                text-transform: uppercase;
+                font-family: heroic-3;
+            } 
+            .seccion2-articulo-enlaceCreador {
+                color:$COLOR-ENFASIS1;
+                
+            }
+        }
+    }
